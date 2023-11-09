@@ -31,6 +31,10 @@ Install Docker on Linux
 
 -- sudo apt-get update && sudo apt-get -y install docker-ce
 
+  Give user access to docker
+
+-- sudo usermod -aG docker $USER
+
 -- sudo systemctl start docker
 
 -- sudo systemctl status docker
@@ -59,14 +63,9 @@ Run setup.sh file
 
 -- ./setup.sh
 
-Give user access to docker
-
--- sudo usermod -aG docker $USER
-
 Check if docker containers are up and running
 
 -- sudo docker ps
-
 
 If all containers are running go to browser and hit
 
